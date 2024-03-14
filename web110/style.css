@@ -1,10 +1,10 @@
 body { 
-  background-color: lightblue; 
+  background-color: #c586a0; 
   font-family: system-ui;
 } 
 
 h1 { 
-  color: navy; 
+  color: #561146; 
   margin-left: 20px; 
 }
 p {
