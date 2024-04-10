@@ -20,15 +20,15 @@
   </canvas>
   
    <script>
-    var example = document.getElementById("example");
-    var context = example.getContext("2d");
+    const example = document.getElementById("example");
+    const context = example.getContext("2d");
   
-    // Set stroke and fill to blue
+    // Set stroke and fill to pink
     context.strokeStyle = "pink";
-    context.fillStyle = "blue";
+    context.fillStyle = "pink";
   
     // Select font, alignment, draw text, and fill characters
-    context.font = "36px sans-serif";
+    context.font = "36px monospace";
     context.textAlign="center";
     context.strokeText("HTML5 Canvas", 160, 50);
     context.fillText("HTML5 Canvas", 160, 50);
