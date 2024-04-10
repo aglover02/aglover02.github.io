@@ -15,23 +15,23 @@
     document.getElementById("date").innerHTML = Date();
     </script>
     
-    <canvas id="example" width="360" height="240">
+    <canvas id="canvas" width="360" height="240">
     This text is displayed if your browser does not support HTML5 Canvas.
   </canvas>
   
    <script>
-    const example = document.getElementById("example");
-    const context = example.getContext("2d");
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
   
     // Set stroke and fill to pink
-    context.strokeStyle = "pink";
-    context.fillStyle = "pink";
+    ctx.strokeStyle = "pink";
+    ctx.fillStyle = "pink";
   
     // Select font, alignment, draw text, and fill characters
-    context.font = "36px monospace";
-    context.textAlign="center";
-    context.strokeText("Autumn Glover!", 160, 50);
-    context.fillText("Autumn Glover!", 160, 50);
+    ctx.font = "36px monospace";
+    ctx.textAlign= "center";
+    ctx.strokeText("Autumn Glover!", 160, 50);
+    ctx.fillText("left-aligned", 160, 50);
   </script>
     
   </body>
