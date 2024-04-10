@@ -23,15 +23,22 @@
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
   
-    // Set stroke and fill to pink
     ctx.strokeStyle = "dark pink";
     ctx.fillStyle = "dark pink";
   
-    // Select font, alignment, draw text, and fill characters
     ctx.font = "36px monospace";
     ctx.textAlign= "center";
     ctx.strokeText("Autumn Glover!", 160, 50);
     ctx.fillText("Autumn Glover!", 160, 50);
+
+    ctx.beginPath();
+    ctx.fillStyle = 'dark pink';
+    ctx.beginPath();
+    ctx.moveTo(270, 105);
+    ctx.lineTo(235, 175);
+    ctx.lineTo(310, 175);
+    ctx.fill();
+    ctx.closePath();
   </script>
     
   </body>
