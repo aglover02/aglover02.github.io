@@ -8,28 +8,31 @@
   </head>
 
   <body>
-   <h1 id="heading"></h1>
-   <script>document.getElementById("heading").innerHTML = "Assignment 12 - Summary by Autumn Glover";</script>
-   <p id="date"></p>
-   <script>
-    document.getElementById("date").innerHTML = Date();
-   </script>
-   <canvas id="example1" width="360" height="240">
-      This text is displayed if your broswer does not support HTML5 Canvas.
-   </canvas>
-
+    <h1 id="heading"></h1>
+    <script>document.getElementById("heading").innerHTML = "Assignment 12 - Summary by Autumn Glover";</script>
+    <p id="date"></p>
     <script>
-      var example = document.getElementById("example");
-      var context = example.getContext("2d");
-    
-      context.Strokestyle = "pink";
-      context.fillStyle = "pink";
-    
-      context.font = "36px monospace";
-      context.textAlign= "center";
-      context.strokeText("HTML5 Canvas, 160, 50); 
-      context.fillText("HTML5 Canvas", 160, se);
+    document.getElementById("date").innerHTML = Date();
     </script>
+    
+    <canvas id="example" width="360" height="240">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
+   <script>
+    var example = document.getElementById("example");
+    var context = example.getContext("2d");
+  
+    // Set stroke and fill to blue
+    context.strokeStyle = "pink";
+    context.fillStyle = "blue";
+  
+    // Select font, alignment, draw text, and fill characters
+    context.font = "36px sans-serif";
+    context.textAlign="center";
+    context.strokeText("HTML5 Canvas", 160, 50);
+    context.fillText("HTML5 Canvas", 160, 50);
+  </script>
     
   </body>
 
