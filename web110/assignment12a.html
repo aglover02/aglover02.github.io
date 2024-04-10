@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
-    <h1>Assignment 12 - Summary</h1>
-    <p>
-      Session 12 Web Accessibility<br>
-      
 
-      
-    </p>
+  <body>
+   <h1 id="heading"></h1>
+   <script>document.getElementById("heading").innerHTML = "Assignment 12 - Summary by Autumn Glover";</script>
+   <p id="date"></p>
+   <script>
+    document.getElementById("date").innerHTML = Date();
+   </script>
+   <canvas id="example1" width="360" height="240">
+      This text is displayed if your broswer does not support HTML5 Canvas.
+   </canvas>
   </body>
+  
 </html>
