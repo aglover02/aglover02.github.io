@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Assignment 14 - Summary</h1>
+    <p>
+      Session 14 Database Queries <br>
+      
+      <ul>
+        <li>
+            SELECT COUNT(*) FROM users WHERE role = 'admin';
+        </li>
+        <li>
+            INSERT INTO users (id, username, role, active, cdate) VALUES (1, 'aglover', 'admin', 0, NOW());
+        </li>
+        <li>
+            UPDATE users SET active = 1 WHERE username = 'aglover';
+        </li>
+      </ul>
+      
+    </p>
+  </body>
+</html>
