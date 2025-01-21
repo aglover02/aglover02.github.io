@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB200</title>
+    <noscript>
+        <p>JavaScript is required for this page to function properly. Please enable JavaScript in your browser settings.</p>
+    </noscript>    
 </head>
 <body>
-<p id="paragraph"></p>
-<script src="script.js"></script>
+    <p id="paragraph"></p> 
+    <script src="script.js"></script>
+    
+    <br>
+    <br>
+    
+    <script>
+        document.write("This is being displayed using embedded Javascript");
+    </script>
 
+    <p id="change">Press the button.</p>
+
+    <button type="button" onclick="myButton()">Button</button>
+
+    <script>
+        function myButton() {
+            document.getElementById("change").innerHTML = "BOOM function called.";
+            }
+        window.alert("🎉 Surprise! Part II 🎉")
+    </script>
 </body>
 </html>
