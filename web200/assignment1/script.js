@@ -1,16 +1,16 @@
-function document() {
+function showDocumentMessage() {
     document.write("Hello Autumn!");
 }
 
-function alert() {
+function showAlertMessage() {
     window.alert("🎉 Surprise! 🎉")
 }
 
-function change() {
+function changeParagraph() {
     document.getElementById('paragraph').innerHTML = "This is being displayed using Javascript.";
 }
 
-function console() {
+function logConsoleMessage() {
     console.log("I hope you're having a great day.");
 }
 
