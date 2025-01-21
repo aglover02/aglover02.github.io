@@ -3,7 +3,7 @@ function showDocumentMessage() {
 }
 
 function showAlertMessage() {
-    window.alert("🎉 Surprise! 🎉")
+    window.alert("🎉 Surprise! 🎉");
 }
 
 function changeParagraph() {
@@ -14,3 +14,7 @@ function logConsoleMessage() {
     console.log("I hope you're having a great day.");
 }
 
+showDocumentMessage();
+showAlertMessage();
+changeParagraph();
+logConsoleMessage();
