@@ -5,8 +5,8 @@ let weeklyPay = hoursPerWeek * ratePerHour;
 let monthlyPay = (weeklyPay * 52) / 12; 
 let annualPay = weeklyPay * 52;        
 
-document.write("Weekly Gross Pay: $" + weeklyPay.toFixed(2));
+document.write("<p>Weekly Gross Pay: $" + weeklyPay.toFixed(2) + "</p>");
 
-document.write("    Monthly Gross Pay: $" + monthlyPay.toFixed(2));
+document.write("<p>Monthly Gross Pay: $" + monthlyPay.toFixed(2) + "</p>");
 
-document.write("    Annual Gross Pay: $" + annualPay.toFixed(2));
+document.write("<p>Annual Gross Pay: $" + annualPay.toFixed(2) + "</p>");
