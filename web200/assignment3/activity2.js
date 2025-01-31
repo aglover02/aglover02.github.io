@@ -19,7 +19,7 @@ function main() {
     
     let area = calculateRoomArea(length, width);
     
-    //display the result in square yards
+    //display the result
     document.write("The area of the room is " + area.toFixed(2) + " square yards.");
 }
 
