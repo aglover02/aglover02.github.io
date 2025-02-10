@@ -29,7 +29,11 @@ function setupPayCalculator() {
 
         const { weeklyPay, monthlyPay, annualPay } = calculatePay(hoursPerWeek, ratePerHour);
 
-        errorElement.textContent = ''; //clear error message
+        errorElement.textContent = ''; 
+        weeklyPayElement.style.display = 'block';
+        monthlyPayElement.style.display = 'block';
+        annualPayElement.style.display = 'block';
+
         weeklyPayElement.textContent = `Weekly Pay: $${weeklyPay.toFixed(2)}`;
         monthlyPayElement.textContent = `Monthly Pay: $${monthlyPay.toFixed(2)}`;
         annualPayElement.textContent = `Annual Pay: $${annualPay.toFixed(2)}`;
