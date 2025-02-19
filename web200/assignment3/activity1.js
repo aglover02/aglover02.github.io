@@ -3,7 +3,7 @@ function mainShapeAreas() {
     let rectLength = prompt("Enter the length of the rectangle (in feet):");
     let rectWidth = prompt("Enter the width of the rectangle (in feet):");
     let rectangleArea = rectLength * rectWidth;
-    document.getElementById(results).innerHTML = "The area of the rectangle is " + rectangleArea + " square feet.<br>"
+    document.write("The area of the rectangle is " + rectangleArea + " square feet.<br>")
 
     //triangle area
     let triBase = prompt("Enter the base of the triangle (in feet):");
