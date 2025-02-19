@@ -18,8 +18,8 @@ document.getElementById('ageButton').addEventListener('click', function() {
     const unit = document.getElementById('unitInput').value.toUpperCase();
     const result = convertAge(ageInYears, unit);
 
-    if (result !== null) {
-        document.getElementById('ageResult').textContent = `Your age in ${unit}: ${result}`;
+    if (result != null) {
+        document.getElementById('ageResult').textContent = 'Your age in ' + unit + ' is ' result;
     } else {
         document.getElementById('ageResult').textContent = 'Invalid unit.';
     }
