@@ -17,7 +17,7 @@ document.getElementById('sockButton').addEventListener('click', function() {
     const shoeSize = parseFloat(document.getElementById('shoeSize').value);
     if (!isNaN(shoeSize)) {
         const result = sockSize(shoeSize);
-        document.getElementById('sockSize').textContent = 'Sock size: ' + result;
+        document.getElementById('sockSize').textContent = 'Sock size: ' + sockSize;
     } else {
         document.getElementById('sockSize').textContent = 'Please enter a valid shoe size.';
     }
