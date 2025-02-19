@@ -1,12 +1,12 @@
 function convertAge(ageInYears, unit) {
-    switch (unit) {
-        case 'Months':
+    switch (unit.tolowercase()) {
+        case 'months':
             return ageInYears * 12; //months
-        case 'Days':
+        case 'days':
             return ageInYears * 365; //days (ignoring leap years)
-        case 'Hours':
+        case 'hours':
             return ageInYears * 365 * 24; //hours
-        case 'Seconds':
+        case 'seconds':
             return ageInYears * 365 * 24 * 3600; //seconds
         default:
             return null;
@@ -15,7 +15,7 @@ function convertAge(ageInYears, unit) {
 
 document.getElementById('ageButton').addEventListener('click', function() {
     const ageInYears = parseInt(document.getElementById('ageInput').value, 10);
-    const unit = document.getElementById('unitInput').value.toUpperCase();
+    const unit = document.getElementById('unitInput').value;
     const result = convertAge(ageInYears, unit);
 
     if (result != null) {
