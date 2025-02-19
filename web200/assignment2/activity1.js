@@ -1,5 +1,5 @@
-let hoursPerWeek = parseFloat(prompt("Enter the number of hours you work per week: "));
-let ratePerHour = parseFloat(prompt("Enter your hourly rate: "));
+let hoursPerWeek = prompt("Enter the number of hours you work per week: ");
+let ratePerHour = prompt("Enter your hourly rate: ");
 
 if (!isNaN(hoursPerWeek) && !isNaN(ratePerHour)) {
     let weeklyPay = hoursPerWeek * ratePerHour;
