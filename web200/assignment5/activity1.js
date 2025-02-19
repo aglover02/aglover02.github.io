@@ -13,3 +13,12 @@ function sockSize(shoeSize) {
         return "Extra Large";
     }
 }
+document.getElementById('sockButton').addEventListener('click', function() {
+    const shoeSize = parseFloat(document.getElementById('shoeSize').value);
+    if (!isNaN(shoeSize)) {
+        const result = sockSize(shoeSize);
+        document.getElementById('sockSize').textContent = 'Sock size: ' + result;
+    } else {
+        document.getElementById('sockSize').textContent = 'Please enter a valid shoe size.';
+    }
+});
