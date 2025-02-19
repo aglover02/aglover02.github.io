@@ -19,7 +19,7 @@ document.getElementById('ageButton').addEventListener('click', function() {
     const result = convertAge(ageInYears, unit);
 
     if (result != null) {
-        document.getElementById('ageResult').textContent = 'Your age in ' + unit + ' is ' result;
+        document.getElementById('ageResult').textContent = 'Your age in ' + unit + ' is ' + result;
     } else {
         document.getElementById('ageResult').textContent = 'Invalid unit.';
     }
