@@ -1,5 +1,5 @@
 function sockSize(shoeSize) {
-    shoeSize = Math.ceil(shoeSize); // Round half-sizes up to the next whole size
+    shoeSize = Math.ceil(shoeSize); // round half-sizes up to the next whole size
 
     if (shoeSize < 4) {
         return "Extra Small";
