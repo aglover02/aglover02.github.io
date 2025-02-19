@@ -1,4 +1,4 @@
-function determineSockSize(shoeSize) {
+function sockSize(shoeSize) {
     shoeSize = Math.ceil(shoeSize); // Round half-sizes up to the next whole size
 
     if (shoeSize < 4) {
