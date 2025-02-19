@@ -1,4 +1,4 @@
-let ageInYears = parseFloat(prompt("Enter your age in years: "));
+let ageInYears = prompt("Enter your age in years: ");
 
 if (!isNaN(ageInYears) && ageInYears > 0) {
     let ageInMonths = ageInYears * 12;
