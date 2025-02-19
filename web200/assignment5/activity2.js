@@ -1,5 +1,5 @@
 function convertAge(ageInYears, unit) {
-    switch (unit.toLowerCase()) {
+    switch (unit.toLowerCase()) { 
         case 'months':
             return ageInYears * 12; //months
         case 'days':
