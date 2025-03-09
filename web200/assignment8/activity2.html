@@ -2,16 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB200</title>  
+    <title>Grade Average Calculator</title>
 </head>
 <body>
-    <h1>Web 200</h1>
-    <h2>Assignment 3--Activity 2</h2>
-     
+    <h1>Grade Average Calculator</h1>
+    <div>
+        <label for="gradeInput">Enter grade scores (press Enter to add, leave blank to finish):</label>
+        <input type="text" id="gradeInput">
+        <button id="calculateButton">Calculate Average</button>
+    </div>
+    <div>
+        <h2>Entered Grades:</h2>
+        <ul id="gradesList"></ul>
+    </div>
+    <div>
+        <h2>Average Grade:</h2>
+        <p id="averageOutput">N/A</p>
+
     <script src="activity2.js"></script>
-    <br>
     <h2>Navigation:</h2>
     <h3><a href="/web200/assignment1/index.html">Assignment 1</a></h3>
     <h3>Assignment 2</h3>
@@ -50,7 +59,5 @@
             <li><a href="/web200/assignment8/activity2.html">Activity 2</a></li>
         </ul>
 
-    
-    
 </body>
 </html>
