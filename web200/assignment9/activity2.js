@@ -3,7 +3,7 @@
 'use strict';
 
 window.addEventListener("load", () => {
-  // Add event listener for date picker
+  //add event listener for date picker
   const datePicker = document.getElementById("date");
   datePicker.addEventListener("input", displaySelectedDate);
 });
