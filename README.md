@@ -20,3 +20,6 @@ Assignment 8: In this session, I learned how to work with arrays in JavaScript, 
 
 
 Assignment 9: Through this lesson, I learned how to effectively integrate HTML and JavaScript to create an interactive web page. I handled user input events with a date picker and dynamically displayed the date components using output elements. I practiced JavaScript best practices. This exercise also improved my understanding of handling dates accurately, particularly accounting for time zones with UTC methods.
+
+Assignment 10: In this session, I got a better understanding of JavaScript objects and their role in structuring code efficiently. I learned how to define constructor functions to create objects with properties and methods, following the principles of encapsulation and reusability. By adding a method to the Book object prototype, I improved the program’s design, making it more modular and scalable. Understanding JavaScript objects is important for building interactive web applications, and I plan to apply these concepts in my educational projects and future web development career, where object-oriented programming helps create maintainable and efficient code.
+
