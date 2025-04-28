@@ -6,5 +6,47 @@
   <title>Pizza Order</title>
 </head>
 <body>
-    
+
+    <h1>Place Your Order</h1>
+
+    <form id="customerForm">
+      <h2>Customer Info</h2>
+      <label>Name: <input type="text" id="custName" required></label><br>
+      <label>Address: <input type="text" id="custAddress" required></label><br>
+      <label>Phone: <input type="tel" id="custPhone" pattern="\d{10}" placeholder="1234567890" required></label>
+    </form>
+  
+    <form id="pizzaForm">
+      <h2>Build a Pizza</h2>
+      <label>Size:
+        <select id="pizzaSize">
+          <option value="small">Small ($1/topping)</option>
+          <option value="medium">Medium ($1.5/topping)</option>
+          <option value="large">Large ($2/topping)</option>
+        </select>
+      </label><br>
+      <fieldset>
+        <legend>Select Toppings ($ price varies):</legend>
+        <label><input type="checkbox" value="pepperoni"> Pepperoni</label>
+        <label><input type="checkbox" value="mushrooms"> Mushrooms</label>
+        <label><input type="checkbox" value="onions"> Onions</label>
+        <label><input type="checkbox" value="sausage"> Sausage</label>
+        <label><input type="checkbox" value="bacon"> Bacon</label>
+        <label><input type="checkbox" value="olives"> Olives</label>
+      </fieldset>
+      <button type="button" id="addPizzaBtn">Add Pizza</button>
+    </form>
+  
+    <h2>Order Summary</h2>
+    <div id="orderSummary">
+      <p>No pizzas added yet.</p>
+    </div>
+  
+    <form id="submitForm">
+      <h2>Comments / Instructions</h2>
+      <textarea id="orderComments" rows="3" cols="50" placeholder="Any special notes?"></textarea><br>
+      <button type="button" id="submitOrderBtn">Submit Order</button>
+    </form>
+
 </body>
+</html>
