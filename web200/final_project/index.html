@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <h1>Order some pizza!!</h1>
   <form id="orderForm">
-    <fieldset>
+    <fieldset class="fieldset">
       <legend>Customer Info</legend>
       <label>Name: <input type="text" id="name" required></label>
       <label>Address: <input type="text" id="address" required></label>
       <label>Phone: <input type="tel" id="phone" pattern="\d{10}" required></label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset">
       <legend>Pizza</legend>
-      <label>Size:
+      <label class="size">Size:
         <select id="size">
           <option value="small">Small ($1/topping)</option>
           <option value="medium">Medium ($1.50/topping)</option>
@@ -38,12 +39,12 @@
       <button type="button" id="addPizza">Add Pizza</button>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset">
       <legend>Comments</legend>
       <textarea id="comments" rows="3" placeholder="Special notes or delivery instructions"></textarea>
     </fieldset>
 
-    <button type="submit">Submit Order</button>
+    <button type="submit" id="submit">Submit Order</button>
   </form>
 
   <div id="pizzaList"></div>
