@@ -82,4 +82,35 @@ class Customer {
         }
       });
     
+      document.getElementById("addPizza").addEventListener("click", () => {
+        const size = document.getElementById("size").value;
+        const toppings = Array.from(document.querySelectorAll("#toppings input:checked")).map(i => i.value);
+        const div = document.createElement("div");
+        div.className = "pizza-item";
+        div.dataset.size = size;
+        div.dataset.toppings = JSON.stringify(toppings);
+        div.innerText = `${size.charAt(0).toUpperCase() + size.slice(1)} pizza with ${toppings.join(", ") || "no toppings"}`;
+        pizzaList.appendChild(div);
+        updateSummary();
+      });
+      
+      function updateSummary() {
+        if (!order) {
+          order = new Order(new Customer("", "", ""));
+          order.pizzas = Array.from(document.querySelectorAll(".pizza-item")).map(div =>
+            new Pizza(div.dataset.size, JSON.parse(div.dataset.toppings))
+          );
+        }
+        const calc = order.calculateTotal();
+        summary.innerHTML = `
+          <h2>Order Summary</h2>
+          <p>Customer: ${order.customer.name}</p>
+          <p>Pizzas: ${order.pizzas.length}</p>
+          <p>Subtotal: $${calc.subtotal.toFixed(2)}</p>
+          <p>Tax (10%): $${calc.tax.toFixed(2)}</p>
+          <p>Total: $${calc.total.toFixed(2)}</p>
+          <p>Comments: ${order.comments}</p>
+        `;
+      }
+    });
   
