@@ -3,50 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizza Order</title>
+  <title>Pizza Order App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <form id="orderForm">
+    <fieldset>
+      <legend>Customer Info</legend>
+      <label>Name: <input type="text" id="name" required></label>
+      <label>Address: <input type="text" id="address" required></label>
+      <label>Phone: <input type="tel" id="phone" pattern="\d{10}" required></label>
+    </fieldset>
 
-    <h1>Place Your Order</h1>
-
-    <form id="customerForm">
-      <h2>Customer Info</h2>
-      <label>Name: <input type="text" id="custName" required></label><br>
-      <label>Address: <input type="text" id="custAddress" required></label><br>
-      <label>Phone: <input type="tel" id="custPhone" pattern="\d{10}" placeholder="1234567890" required></label>
-    </form>
-  
-    <form id="pizzaForm">
-      <h2>Build a Pizza</h2>
+    <fieldset>
+      <legend>Pizza</legend>
       <label>Size:
-        <select id="pizzaSize">
+        <select id="size">
           <option value="small">Small ($1/topping)</option>
-          <option value="medium">Medium ($1.5/topping)</option>
+          <option value="medium">Medium ($1.50/topping)</option>
           <option value="large">Large ($2/topping)</option>
         </select>
-      </label><br>
-      <fieldset>
-        <legend>Select Toppings ($ price varies):</legend>
+      </label>
+
+      <fieldset id="toppings">
+        <legend>Toppings</legend>
         <label><input type="checkbox" value="pepperoni"> Pepperoni</label>
+        <label><input type="checkbox" value="sausage"> Sausage</label>
         <label><input type="checkbox" value="mushrooms"> Mushrooms</label>
         <label><input type="checkbox" value="onions"> Onions</label>
-        <label><input type="checkbox" value="sausage"> Sausage</label>
-        <label><input type="checkbox" value="bacon"> Bacon</label>
+        <label><input type="checkbox" value="peppers"> Peppers</label>
         <label><input type="checkbox" value="olives"> Olives</label>
       </fieldset>
-      <button type="button" id="addPizzaBtn">Add Pizza</button>
-    </form>
-  
-    <h2>Order Summary</h2>
-    <div id="orderSummary">
-      <p>No pizzas added yet.</p>
-    </div>
-  
-    <form id="submitForm">
-      <h2>Comments / Instructions</h2>
-      <textarea id="orderComments" rows="3" cols="50" placeholder="Any special notes?"></textarea><br>
-      <button type="button" id="submitOrderBtn">Submit Order</button>
-    </form>
 
+      <button type="button" id="addPizza">Add Pizza</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Comments</legend>
+      <textarea id="comments" rows="3" placeholder="Special notes or delivery instructions"></textarea>
+    </fieldset>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+  <div id="pizzaList"></div>
+  <div id="orderSummary"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
