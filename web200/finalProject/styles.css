@@ -7,92 +7,131 @@
 */
 
 body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #FBE0DE;
-  }
-  h1 {
-    color: #991E20;
-    text-align: center;
-    text-decoration: underline wavy #295129;
-    text-underline-offset: 10px;
-  }
-  legend {
-    font-weight: bolder;
-    letter-spacing: 1px;
-    color: #295129;
-    text-align: center;
-    font-size: larger;
-    margin-bottom: 10px;
-  }
-  label {
-    padding: 10px;
-    color: #295129;
-  }
-  .size {
-    margin-left: 260px;
-  }
-  fieldset {
-    margin-top: 20px;
-    border: 2px solid #d0292c;
-    padding: 20px;
-    border-radius: 15px;
-  }
-  .fieldset {
-    margin-top: 50px;
-  }
-  textarea {
-    width: 749px;
-    height: 80px;
-    border-radius: 7px;
-    border: solid 1px #C07274;
-    background-color: #ecffec;
-  }
-  #pizzaList, #orderSummary {
-    margin-top: 20px;
-    color: #295129;
-  }
-  .pizza-item {
-    border-bottom: 1px solid #BB2528;
-    padding: 20px;
-  }
-  #addPizza {
-    margin-left: 340px;
-  }
-  #submit {
-    margin-left: 351px;
-  }
-  button {
-    font-size: small;
-    font-weight: bold;
-    margin-top: 15px;
-    color: #672829;
-    background-color: #ecffec;
-    border: 1.5px solid #BB2528;
-    border-radius: 5px;
-  }
-  button:hover{
-    background-color: #c3f5c3;
-  }
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  background-color: #FBE0DE;
+}
 
-  input {
-    border: 1px solid #295129;
-    border-radius: 5px;
-    background-color: #ecffec;
-  }
-  select {
-    font-size: medium;
-    border: 1px solid #295129;
-    border-radius: 5px;
-    background-color: #ecffec;
-    color: #672829;
-    padding: 1px;
-  }
-  select:hover {
-    background-color: #c3f5c3;
-  }
-  ::placeholder {
-    color: #295129;
-  }
+h1 {
+  color: #991E20;
+  text-align: center;
+  text-decoration: underline wavy #428642;
+  text-underline-offset: 10px;
+  padding-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: 2px solid #d0292c;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.fieldset {
+  margin-top: 40px;
+}
+
+legend {
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #428642;
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #428642;
+}
+
+input,
+select {
+  border: 1px solid #428642;
+  border-radius: 5px;
+  background-color: #ecffec;
+  margin-bottom: 20px;
+}
+
+#orderForm fieldset:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#orderForm fieldset:first-of-type label {
+  flex: 1;
+  min-width: 200px;
+}
+
+.size {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.size select {
+  font-size: medium;
+  border: 1px solid #428642;
+  border-radius: 5px;
+  background-color: #ecffec;
+  color: #672829;
+  padding: 3px 5px;
+}
+
+select:hover {
+  background-color: #c3f5c3;
+}
+
+textarea {
+  width: 100%;
+  max-width: 680px;
+  height: 90px;
+  border-radius: 7px;
+  border: solid 1px #C07274;
+  background-color: #ecffec;
+  display: block;
+  margin: auto;
+}
+
+::placeholder {
+  color: #428642;
+}
+
+#pizzaList,
+#orderSummary {
+  margin-top: 20px;
+  color: #428642;
+  text-align: center;
+}
+
+.pizza-item {
+  border-bottom: 1px solid #BB2528;
+  padding: 20px;
+}
+
+#addPizza,
+#submit {
+  display: block;
+  margin: 15px auto auto;
+}
+
+button {
+  font-size: small;
+  font-weight: bold;
+  color: #672829;
+  background-color: #ecffec;
+  border: 1.5px solid #BB2528;
+  border-radius: 5px;
+  padding: 6px 15px;
+}
+
+button:hover {
+  background-color: #c3f5c3;
+}
