@@ -1,3 +1,11 @@
+/* 
+  This CSS file styles the pizza order web application.
+  It provides a clean, centered layout with custom colors and spacing,
+  enhances readability with styled inputs and buttons, and adds hover effects
+  for better user interaction. The theme uses warm tones with a soft background
+  to create a fun and inviting user experience.
+*/
+
 body {
     font-family: Arial, sans-serif;
     max-width: 800px;

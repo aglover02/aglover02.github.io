@@ -1,3 +1,8 @@
+// This program creates a functional pizza order system using JavaScript.
+// It allows users to input customer details, select multiple pizzas with various sizes and toppings,
+// dynamically displays the order summary with pricing and tax, and submits the final order using AJAX and JSON.
+// The program uses separate Customer, Pizza, and Order classes to manage order data.
+
 class Customer {
     constructor(name, address, phone) {
       this.name = name;
@@ -8,7 +13,7 @@ class Customer {
   
   class Pizza {
     constructor(size, toppings) {
-      this.size = size;
+      this.size = size; 
       this.toppings = toppings;
     }
   }
